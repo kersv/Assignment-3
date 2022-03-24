@@ -63,7 +63,14 @@ function removeR() {
 
 // Remove a column
 function removeC() {
-    
+    let tablegrid = document.getElementById('grid')
+    for(let i = numRows; i > 0; i--){
+        tablegrid.childNodes[i].removeChild(tablegrid.childNodes[i].lastElementChild)
+    }
+    numCols--;
+    if(numCols <= 0){
+        numCols = 0;
+    }
 }
 
 // Set global variable for selected color
