@@ -49,7 +49,16 @@ function addC() {
 
 // Remove a row
 function removeR() {
-    
+    let tablegrid = document.getElementById('grid')
+    let lastRow = tablegrid.lastElementChild
+    tablegrid.removeChild(lastRow)
+
+    numRows--;
+
+    if(numRows <= 0){
+        numRows = 0;
+    }
+
 }
 
 // Remove a column
