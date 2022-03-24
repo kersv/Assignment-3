@@ -28,7 +28,23 @@ function addR() {
 
 // Add a column
 function addC() {
-    
+    let existRows = document.querySelectorAll('tr')
+    let tablegrid = document.getElementById('grid')
+    let col = document.createElement('td')
+    let row = document.createElement('tr')
+
+    if(numRows === 0){
+        row.appendChild(document.createElement('td'))
+        tablegrid.appendChild(row)
+        numRows++;
+    }
+    else{
+        for(let i = 0; i < numRows; i++){
+            existRows[i].appendChild(document.createElement('td'))
+        }
+    }
+    numCols++;
+
 }
 
 // Remove a row
