@@ -23,6 +23,13 @@ function addR() {
     }
     numRows++;
 
+    let box = document.querySelectorAll('tr td')
+    for(let i = 0; i < box.length; i++){
+        box[i].onclick = function() {
+            this.style.backgroundColor = colorSelected;
+        }
+    }
+
 
 }
 
@@ -44,6 +51,13 @@ function addC() {
         }
     }
     numCols++;
+
+    let box = document.querySelectorAll('tr td')
+    for(let i = 0; i < box.length; i++){
+        box[i].onclick = function() {
+            this.style.backgroundColor = colorSelected;
+        }
+    }
 
 }
 
