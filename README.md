@@ -1,2 +1,1 @@
-# grid-maker-starter-code
-Starter code for Assignment 3 - Grid Maker.
+https://kersv.github.io/Assignment-3/
