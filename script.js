@@ -5,7 +5,6 @@ let colorSelected;
 
 // Add a row
 function addR() {
-    console.log(numRows);
     let tablegrid = document.getElementById('grid')
     let row = document.createElement('tr')  
     let col = document.createElement('td')
@@ -95,6 +94,12 @@ function selectColor(){
 
 // Fill all uncolored cells
 function fillU(){
+    let boxes = document.querySelectorAll('td')
+    boxes.forEach(box => {
+        if(box.style.backgroundColor == ""){
+            box.style.backgroundColor = colorSelected;
+        }
+    })
     
 }
 
