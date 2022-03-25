@@ -95,12 +95,13 @@ function selectColor(){
 
 // Fill all uncolored cells
 function fillU(){
-    alert("Clicked Fill All Uncolored"); // Replace this line with your code.
+    
 }
 
 // Fill all cells
 function fillAll(){
-    alert("Clicked Fill All"); // Replace this line with your code.
+    let boxes = document.querySelectorAll('td')
+    boxes.forEach(box => box.style.backgroundColor = colorSelected)
 }
 
 // Clear all cells
